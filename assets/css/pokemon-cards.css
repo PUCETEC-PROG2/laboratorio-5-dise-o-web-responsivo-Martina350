@@ -4,6 +4,18 @@
     padding: 34px;
 }
 
+@media screen and (max-width: 768px) {
+    .pokemon-card {
+        flex: 1 1 calc(50% - 1.5rem);  
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pokemon-card {
+        flex: 1 1 100%;                
+    }
+}
+
 .pokemon-grid {
     display: flex;
     flex-wrap: wrap;
@@ -26,17 +38,17 @@
     min-width: 300px;
 }
 
-/*.pokemon-card:hover {
+.pokemon-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}*/
+}
 
 .pokemon-image {
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
     object-fit: contain;
-    /*background: linear-gradient(135deg, #ebfefa 0%, #b4e9fd 50%);*/
+    background: linear-gradient(135deg, #ebfefa 0%, #b4e9fd 50%);
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/023/606/089/small/a-beautiful-anime-style-summer-landscape-green-valley-river-high-mountains-with-snow-capped-peaks-blue-sky-with-white-clouds-ai-generated-photo.jpeg');
     background-size: cover;
 }
