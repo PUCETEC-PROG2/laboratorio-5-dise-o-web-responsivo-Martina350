@@ -25,6 +25,18 @@
     max-width: calc(33.33333% - 32px);
     min-width: 300px;
   }
+
+  @media screen and (max-width: 768px) {
+    .trainer-card {
+        flex: 1 1 calc(50% - 1.5rem);  
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .trainer-card {
+        flex: 1 1 100%;                
+    }
+}
   
   .trainer-card:hover {
     transform: translateY(-5px);
